@@ -1,0 +1,23 @@
+technologies:
+  - Python
+  - Kubernetes
+  - Docker
+  - JavaScript
+  - AWS
+
+missions:
+  - poste: "Développeur Full Stack"
+    duree: "6 mois"
+    date: "2023-01-01"
+    technologies: [true, true, false, false, true]
+    slug: "mission001"
+  - poste: "DevOps Engineer"
+    duree: "3 mois"
+    date: "2023-07-01"
+    technologies: [false, true, true, true, false]
+    slug: "mission002"
+  - poste: "Data Scientist"
+    duree: "4 mois"
+    date: "2023-03-01"
+    technologies: [true, false, false, true, false]
+    slug: "mission003"

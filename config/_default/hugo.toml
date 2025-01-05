@@ -1,0 +1,16 @@
+baseURL = "https://saukratesk.github.io/hugo_website_202501/"
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = "Mon Site Web"
+
+[params]
+  description = "Mon site web personnel avec Hugo"
+  theme = "my-theme"
+
+[languages]
+  [languages.fr]
+    languageName = "Français"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    weight = 2

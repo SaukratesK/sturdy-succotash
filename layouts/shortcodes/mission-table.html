@@ -1,0 +1,26 @@
+{{ $data := index .Site.Data "missions" }}
+
+<table>
+  <thead>
+    <tr>
+      <th>Poste</th>
+      <th>Durée</th>
+      <th>Date</th>
+      {{ range $data.technologies }}
+        <th class="rotate-header">{{ . }}</th>
+      {{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $data.missions }}
+      <tr>
+        <td><a href="{{ $.Site.BaseURL }}missions/{{ .slug }}">{{ .poste }}</a></td>
+        <td>{{ .duree }}</td>
+        <td>{{ .date }}</td>
+        {{ range .technologies }}
+          <td>{{ if . }}✓{{ end }}</td>
+        {{ end }}
+      </tr>
+    {{ end }}
+  </tbody>
+</table>

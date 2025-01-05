@@ -1,0 +1,10 @@
+- id: home
+  translation: "Home"
+- id: cv
+  translation: "CV"
+- id: blog
+  translation: "Blog"
+- id: projects
+  translation: "Projects"
+- id: agenda
+  translation: "Agenda"

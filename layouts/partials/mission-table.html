@@ -1,0 +1,24 @@
+<table>
+    <thead>
+      <tr>
+        <th>Poste</th>
+        <th>Durée</th>
+        <th>Date</th>
+        {{ range .Site.Data.missions.technologies }}
+          <th style="transform: rotate(-70deg);">{{ . }}</th>
+        {{ end }}
+      </tr>
+    </thead>
+    <tbody>
+      {{ range .Site.Data.missions.missions }}
+        <tr>
+          <td><a href="{{ .url }}">{{ .poste }}</a></td>
+          <td>{{ .duree }}</td>
+          <td>{{ .date }}</td>
+          {{ range .technologies }}
+            <td>{{ if . }}✓{{ end }}</td>
+          {{ end }}
+        </tr>
+      {{ end }}
+    </tbody>
+  </table>

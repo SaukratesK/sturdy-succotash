@@ -1,0 +1,6 @@
+baseURL = "https://votre-username.github.io/fr/"
+languageCode = "fr"
+title = "Mon Site Web"
+
+[params]
+  description = "Mon site web personnel avec Hugo"
