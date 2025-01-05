@@ -4,20 +4,26 @@ technologies:
   - Docker
   - JavaScript
   - AWS
+  - GCP
 
 missions:
   - poste: "Développeur Full Stack"
     duree: "6 mois"
     date: "2023-01-01"
-    technologies: [true, true, false, false, true]
+    technologies: [true, true, false, false, true, false]
     slug: "mission001"
   - poste: "DevOps Engineer"
     duree: "3 mois"
     date: "2023-07-01"
-    technologies: [false, true, true, true, false]
+    technologies: [false, true, true, true, false, false]
     slug: "mission002"
   - poste: "Data Scientist"
     duree: "4 mois"
     date: "2023-03-01"
-    technologies: [true, false, false, true, false]
+    technologies: [true, false, false, true, false, false]
+    slug: "mission003"
+  - poste: "Data Engineer"
+    duree: "5 mois"
+    date: "2021-10-01"
+    technologies: [true, false, false, false, false, true]
     slug: "mission003"
