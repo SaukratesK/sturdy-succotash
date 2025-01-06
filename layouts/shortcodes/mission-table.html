@@ -7,7 +7,13 @@
       <th>Durée</th>
       <th>Date</th>
       {{ range $data.technologies }}
-        <th class="rotate-header">{{ . }}</th>
+        <th>
+          <div class="rotated-th">
+					  <span class="rotated-th__label">
+              {{ . }}
+            </span>
+          </div>       
+        </th>
       {{ end }}
     </tr>
   </thead>
@@ -18,7 +24,7 @@
         <td>{{ .duree }}</td>
         <td>{{ .date }}</td>
         {{ range .technologies }}
-          <td>{{ if . }}✓{{ end }}</td>
+          <td>{{ if . }}<span class="coche-verte">✓</span>{{ end }}</td>
         {{ end }}
       </tr>
     {{ end }}

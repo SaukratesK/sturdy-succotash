@@ -3,7 +3,26 @@ body {
     color: #333;
     background-color: #fff;
   }
-  
+
+  .coche-verte {
+    color: green; /* Couleur verte */
+    font-weight: bold; /* Rendre la coche plus visible */
+  }
+
+  a {
+    text-decoration: none; /* Supprime le trait de soulignement */
+    color: rgb(134, 116, 107); /* Couleur du lien */
+  }
+
+  a:hover {
+    text-decoration: underline; /* Soulignement au survol (optionnel) */
+  }
+
+  nav {
+    background-color: #f0f0f0; /* Fond gris clair */
+    padding: 0px; /* Espacement interne pour améliorer l'apparence */
+  }
+
   nav ul {
     list-style: none;
     padding: 0;
@@ -17,30 +36,49 @@ body {
 /* table.css */
 table {
     width: auto; /* Largeur automatique basée sur le contenu */
-    margin: 20px 10%; /* Marge de 10% à gauche et à droite, 20px en haut et en bas */
+    margin: 20px; /* Marge de 10% à gauche et à droite, 20px en haut et en bas */
     border-collapse: collapse;
-    table-layout: auto; /* La largeur des colonnes s'adapte au contenu */
-  }
+}
   
-  table, th, td {
-    border: 1px solid #ddd;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: center; /* Centrer le texte horizontalement */
-    white-space: nowrap; /* Empêche le texte de passer à la ligne */
-    min-width: 50px; /* Largeur minimale pour les colonnes */
-  }
-  
-  /* Styles pour les en-têtes de colonnes */
-  th {
-    background-color: transparent; /* Pas de fond */
-    font-weight: normal; /* Texte normal (non gras) */
-    vertical-align: middle; /* Centrer verticalement */
-  }
-  
-  /* Styles spécifiques pour les cellules contenant des coches */
-  td {
-    vertical-align: middle; /* Centrer verticalement le contenu */
-  }
+th, td {
+  border: none; /* Supprime les bordures des cellules */
+  padding: 8px;
+  text-align: center; /* Centrer le texte horizontalement */
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+/* Styles pour les en-têtes de colonnes */
+th {
+  background-color: transparent; /* Pas de fond */
+  font-weight: normal; /* Texte normal (non gras) */
+  vertical-align: bottom; /* Centrer verticalement */
+  border-bottom: 1px solid black; /* Ligne noire de 1px en bas */
+}
+
+.rotated-th {
+  height: 80px ;
+  position: relative ;
+}
+.rotated-th__label {
+  bottom: 5px ;
+  left: 50% ;
+  position: absolute ;
+  transform: rotate( -65deg ) ;
+  transform-origin: center left ;
+  white-space: nowrap ;
+}
+
+/* Styles spécifiques pour les cellules contenant des coches */
+td {
+  vertical-align: middle; /* Centrer verticalement le contenu */
+}
+
+  /* Appliquer un fond gris très clair aux lignes paires */
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Gris très clair */
+}
+
+/* Appliquer un fond blanc aux lignes impaires */
+tr:nth-child(odd) {
+  background-color: #ffffff; /* Blanc */
+}
